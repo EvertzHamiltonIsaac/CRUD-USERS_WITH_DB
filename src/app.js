@@ -29,6 +29,6 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1', users_router)
 
-app.listen(() => {
+app.listen(port, () => {
     console.log(`Server started at port ${port}`)
 })
