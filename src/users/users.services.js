@@ -9,7 +9,7 @@ const getAllUsers = async (req, res) => {
 
 const getUserById = async (req, res) => {
     const id = req.params.id
-    users_controller.findUserById()
+    users_controller.findUserById(id)
         .then((data) => {
             if(data){
                 res.status(201).json(data)
@@ -31,7 +31,7 @@ const postUser = async (req, res) => {
     }
     users_controller.createUser(newUser)
     .then((data) => {res.status(201).json(data)})
-    .catch((err) => {res.status(400).json({message: err.message})})
+    .catch((err) => {res.status(400).json({message: err.message, here: 'here'})})
 }
 
 const patchUser = async (req, res) => {

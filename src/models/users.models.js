@@ -2,12 +2,11 @@ const db = require('../utils/database')
 const { DataTypes } = require('sequelize')
 /* Modelo de la Tabla users
 {
-    id: 1,
-    first_name: 'string',
-    last_name: 'string',
-    email: 'string',
-    password: 'string',
-    birthday: 'YYYY/MM/DD'
+    "first_name": "string",
+    "last_name": "string",
+    "email": "string",
+    "password": "string",
+    "birthday": "Y"YYY/MM/DD"
 }
 */
 
